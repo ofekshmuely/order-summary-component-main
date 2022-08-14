@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: 100%;
+  size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-repeat: no-repeat;
+  background-color: var(--Pale-blue);
+}
+
+.card {
+  width: 450px;
+  background-color: white;
+  color: var(--Desaturated-blue);
+  border-radius: 20px;
+  margin: 50px auto;
+  min-height: 0;
+}
+
+.container {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.title {
+  color: var(--Dark-blue);
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.p-desc {
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+
+  border-radius: 12px;
+}
+
+.btn--pro {
+  background-color: var(--Bright-blue);
+  padding: 1rem 0;
+  color: white;
+  box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
+  margin-top: 20px;
+}
+
+.btn--pro:hover {
+  opacity: 0.8;
+}
+
+.btn--can {
+  background-color: white;
+  color: var(--Desaturated-blue);
+  border: none;
+  margin-top: 32px;
+}
+
+.btn--can:hover {
+  color: black;
+}
+
+.plan-container {
+  font-size: 16px;
+  background-color: var(--Very-pale-blue);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-container img {
+  margin-right: -25px;
+}
+
+.plan-container a {
+  color: var(--Bright-blue);
+  font-size: 13px;
+  font-weight: 700;
+}
+.plan-container a:hover {
+  opacity: 0.82;
+  text-decoration: none;
+}
+
+.plan-container strong {
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+
+.plan-desc {
+  line-height: 20px;
+  margin-right: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
+  .card {
+    width: 370px;
+    background-color: white;
+    color: var(--Desaturated-blue);
+    border-radius: 20px;
+    margin: 50px auto;
+    min-height: 0;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .plan-container img {
+    margin-right: 10px;
+  }
+}
